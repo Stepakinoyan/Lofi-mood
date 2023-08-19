@@ -2,12 +2,11 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import asyncio
 
-# Set your Spotify API credentials
-
 class Recommendations():
     def __init__(self, mood):
         self.mood = mood
-        self.sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(client_id='65fb68b588d548a69f232925a80bd8f1', client_secret='2281822a49e74f3f9f5137093378be17'))
+        # You need to add your own client_id and client_secret
+        self.sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(client_id=client_id, client_secret=client_secret))
 
 
         self.bases = {
