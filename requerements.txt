@@ -1,3 +1,4 @@
 fastapi[all]
+fastapi-users[sqlalchemy, oauth]
+uvicorn
 spotipy
-aiogram
