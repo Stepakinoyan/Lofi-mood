@@ -15,7 +15,7 @@ sys.path.append('/mnt/c/Stepa/lofi_mood/code')
 from config import CLIENT_ID, CLIENT_SECRET, SECRET_CODE
 from spotipy import SpotifyOAuth
 
-# ) client_id=CLIENT_ID, client_secret=CLIENT_SECRET, redirect_uri='http://localhost:8000/authenticated-route', scope=['playlist-read-private']
+
 SECRET = SECRET_CODE
 spotify_oauth_client = SpotifyOAuth(client_id=CLIENT_ID, client_secret=CLIENT_SECRET, redirect_uri='http://localhost:8000/auth/spotify/callback', scope='playlist-read-private')
 
